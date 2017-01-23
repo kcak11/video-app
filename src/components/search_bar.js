@@ -11,7 +11,7 @@ class SearchBar extends Component {
     return (
       <div className="search-bar">
         <div style={{"padding":"5px"}}>
-			Video Browser ( powered by <a href="http://www.ashishkumarkc.com" target="_blank">Ashish's Web</a> )
+			Video Browser ( powered by <a href="http://www.ashishkumarkc.com" target="_blank">Ashish\'s Web</a> )
 		</div>
 		<br/>
 		<input
