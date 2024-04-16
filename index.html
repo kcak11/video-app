@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html author="kcak11@1.0.1">
+
+<head>
+    <title>Video Browser</title>
+    <link href='//www.kcak11.com/favicon.png' rel='icon' type='image/x-icon' />
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://pen.kcak11.com/bootstrap/bootstrap.min.css">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <style type="text/css">
+        * {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container"></div>
+</body>
+<script src="bundle.js"></script>
+<script type="text/javascript">
+    ((function () {
+        var chk = function () {
+            var iframeElem = document.querySelector(".embed-responsive-item");
+            if (iframeElem) {
+                iframeElem.style.width = "100%";
+                iframeElem.style.height = "500px";
+            } else {
+                setTimeout(function () {
+                    chk();
+                }, 100);
+            }
+        };
+        chk();
+    })());
+</script>
+
+</html>
